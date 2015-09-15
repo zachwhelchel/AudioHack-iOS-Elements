@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D323B1861BA8C09400AEEA5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1851BA8C09400AEEA5D /* main.m */; };
+		D323B1891BA8C09400AEEA5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1881BA8C09400AEEA5D /* AppDelegate.m */; };
+		D323B18C1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D323B18A1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld */; };
+		D323B18F1BA8C09400AEEA5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B18E1BA8C09400AEEA5D /* ViewController.m */; };
+		D323B1921BA8C09400AEEA5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D323B1901BA8C09400AEEA5D /* Main.storyboard */; };
+		D323B1941BA8C09400AEEA5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D323B1931BA8C09400AEEA5D /* Images.xcassets */; };
+		D323B1971BA8C09400AEEA5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D323B1951BA8C09400AEEA5D /* LaunchScreen.xib */; };
+		D323B1A31BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1A21BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D323B19D1BA8C09400AEEA5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D323B1781BA8C09400AEEA5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D323B17F1BA8C09400AEEA5D;
+			remoteInfo = "AudioHack iOS Elements";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D323B1801BA8C09400AEEA5D /* AudioHack iOS Elements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AudioHack iOS Elements.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D323B1841BA8C09400AEEA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D323B1851BA8C09400AEEA5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D323B1871BA8C09400AEEA5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D323B1881BA8C09400AEEA5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D323B18B1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AudioHack_iOS_Elements.xcdatamodel; sourceTree = "<group>"; };
+		D323B18D1BA8C09400AEEA5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D323B18E1BA8C09400AEEA5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D323B1911BA8C09400AEEA5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D323B1931BA8C09400AEEA5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D323B1961BA8C09400AEEA5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D323B19C1BA8C09400AEEA5D /* AudioHack iOS ElementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AudioHack iOS ElementsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D323B1A11BA8C09400AEEA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D323B1A21BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioHack_iOS_ElementsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D323B17D1BA8C09400AEEA5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D323B1991BA8C09400AEEA5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D323B1771BA8C09400AEEA5D = {
+			isa = PBXGroup;
+			children = (
+				D323B1821BA8C09400AEEA5D /* AudioHack iOS Elements */,
+				D323B19F1BA8C09400AEEA5D /* AudioHack iOS ElementsTests */,
+				D323B1811BA8C09400AEEA5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D323B1811BA8C09400AEEA5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D323B1801BA8C09400AEEA5D /* AudioHack iOS Elements.app */,
+				D323B19C1BA8C09400AEEA5D /* AudioHack iOS ElementsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D323B1821BA8C09400AEEA5D /* AudioHack iOS Elements */ = {
+			isa = PBXGroup;
+			children = (
+				D323B1871BA8C09400AEEA5D /* AppDelegate.h */,
+				D323B1881BA8C09400AEEA5D /* AppDelegate.m */,
+				D323B18D1BA8C09400AEEA5D /* ViewController.h */,
+				D323B18E1BA8C09400AEEA5D /* ViewController.m */,
+				D323B1901BA8C09400AEEA5D /* Main.storyboard */,
+				D323B1931BA8C09400AEEA5D /* Images.xcassets */,
+				D323B1951BA8C09400AEEA5D /* LaunchScreen.xib */,
+				D323B18A1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld */,
+				D323B1831BA8C09400AEEA5D /* Supporting Files */,
+			);
+			path = "AudioHack iOS Elements";
+			sourceTree = "<group>";
+		};
+		D323B1831BA8C09400AEEA5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D323B1841BA8C09400AEEA5D /* Info.plist */,
+				D323B1851BA8C09400AEEA5D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D323B19F1BA8C09400AEEA5D /* AudioHack iOS ElementsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D323B1A21BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m */,
+				D323B1A01BA8C09400AEEA5D /* Supporting Files */,
+			);
+			path = "AudioHack iOS ElementsTests";
+			sourceTree = "<group>";
+		};
+		D323B1A01BA8C09400AEEA5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D323B1A11BA8C09400AEEA5D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D323B17F1BA8C09400AEEA5D /* AudioHack iOS Elements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D323B1A61BA8C09400AEEA5D /* Build configuration list for PBXNativeTarget "AudioHack iOS Elements" */;
+			buildPhases = (
+				D323B17C1BA8C09400AEEA5D /* Sources */,
+				D323B17D1BA8C09400AEEA5D /* Frameworks */,
+				D323B17E1BA8C09400AEEA5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AudioHack iOS Elements";
+			productName = "AudioHack iOS Elements";
+			productReference = D323B1801BA8C09400AEEA5D /* AudioHack iOS Elements.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D323B19B1BA8C09400AEEA5D /* AudioHack iOS ElementsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D323B1A91BA8C09400AEEA5D /* Build configuration list for PBXNativeTarget "AudioHack iOS ElementsTests" */;
+			buildPhases = (
+				D323B1981BA8C09400AEEA5D /* Sources */,
+				D323B1991BA8C09400AEEA5D /* Frameworks */,
+				D323B19A1BA8C09400AEEA5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D323B19E1BA8C09400AEEA5D /* PBXTargetDependency */,
+			);
+			name = "AudioHack iOS ElementsTests";
+			productName = "AudioHack iOS ElementsTests";
+			productReference = D323B19C1BA8C09400AEEA5D /* AudioHack iOS ElementsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D323B1781BA8C09400AEEA5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Zach Whelchel";
+				TargetAttributes = {
+					D323B17F1BA8C09400AEEA5D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D323B19B1BA8C09400AEEA5D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D323B17F1BA8C09400AEEA5D;
+					};
+				};
+			};
+			buildConfigurationList = D323B17B1BA8C09400AEEA5D /* Build configuration list for PBXProject "AudioHack iOS Elements" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D323B1771BA8C09400AEEA5D;
+			productRefGroup = D323B1811BA8C09400AEEA5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D323B17F1BA8C09400AEEA5D /* AudioHack iOS Elements */,
+				D323B19B1BA8C09400AEEA5D /* AudioHack iOS ElementsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D323B17E1BA8C09400AEEA5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D323B1921BA8C09400AEEA5D /* Main.storyboard in Resources */,
+				D323B1971BA8C09400AEEA5D /* LaunchScreen.xib in Resources */,
+				D323B1941BA8C09400AEEA5D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D323B19A1BA8C09400AEEA5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D323B17C1BA8C09400AEEA5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D323B1891BA8C09400AEEA5D /* AppDelegate.m in Sources */,
+				D323B18C1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld in Sources */,
+				D323B18F1BA8C09400AEEA5D /* ViewController.m in Sources */,
+				D323B1861BA8C09400AEEA5D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D323B1981BA8C09400AEEA5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D323B1A31BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D323B19E1BA8C09400AEEA5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D323B17F1BA8C09400AEEA5D /* AudioHack iOS Elements */;
+			targetProxy = D323B19D1BA8C09400AEEA5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D323B1901BA8C09400AEEA5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D323B1911BA8C09400AEEA5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D323B1951BA8C09400AEEA5D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D323B1961BA8C09400AEEA5D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D323B1A41BA8C09400AEEA5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D323B1A51BA8C09400AEEA5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D323B1A71BA8C09400AEEA5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "AudioHack iOS Elements/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D323B1A81BA8C09400AEEA5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "AudioHack iOS Elements/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D323B1AA1BA8C09400AEEA5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AudioHack iOS ElementsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioHack iOS Elements.app/AudioHack iOS Elements";
+			};
+			name = Debug;
+		};
+		D323B1AB1BA8C09400AEEA5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AudioHack iOS ElementsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioHack iOS Elements.app/AudioHack iOS Elements";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D323B17B1BA8C09400AEEA5D /* Build configuration list for PBXProject "AudioHack iOS Elements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D323B1A41BA8C09400AEEA5D /* Debug */,
+				D323B1A51BA8C09400AEEA5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D323B1A61BA8C09400AEEA5D /* Build configuration list for PBXNativeTarget "AudioHack iOS Elements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D323B1A71BA8C09400AEEA5D /* Debug */,
+				D323B1A81BA8C09400AEEA5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D323B1A91BA8C09400AEEA5D /* Build configuration list for PBXNativeTarget "AudioHack iOS ElementsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D323B1AA1BA8C09400AEEA5D /* Debug */,
+				D323B1AB1BA8C09400AEEA5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D323B18A1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D323B18B1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodel */,
+			);
+			currentVersion = D323B18B1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodel */;
+			path = AudioHack_iOS_Elements.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D323B1781BA8C09400AEEA5D /* Project object */;
+}
