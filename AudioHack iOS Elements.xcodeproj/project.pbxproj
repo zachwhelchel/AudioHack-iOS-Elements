@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB003FDB39689E07A7A8252F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6E22CE3A4C1E039F6CE369 /* libPods.a */; };
 		D323B1861BA8C09400AEEA5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1851BA8C09400AEEA5D /* main.m */; };
 		D323B1891BA8C09400AEEA5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1881BA8C09400AEEA5D /* AppDelegate.m */; };
 		D323B18C1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D323B18A1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld */; };
-		D323B18F1BA8C09400AEEA5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B18E1BA8C09400AEEA5D /* ViewController.m */; };
 		D323B1921BA8C09400AEEA5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D323B1901BA8C09400AEEA5D /* Main.storyboard */; };
 		D323B1941BA8C09400AEEA5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D323B1931BA8C09400AEEA5D /* Images.xcassets */; };
 		D323B1971BA8C09400AEEA5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D323B1951BA8C09400AEEA5D /* LaunchScreen.xib */; };
 		D323B1A31BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1A21BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m */; };
+		D323B1AE1BA8C21200AEEA5D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1AD1BA8C21200AEEA5D /* HomeViewController.m */; };
+		D323B1B51BA8C3D800AEEA5D /* ShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B41BA8C3D800AEEA5D /* ShowsViewController.m */; };
+		D323B1B81BA8C6AE00AEEA5D /* EpisodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B71BA8C6AE00AEEA5D /* EpisodesViewController.m */; };
+		D3DF299B1BA8DCA400E0954A /* AFOAuth1Client.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DF299A1BA8DCA400E0954A /* AFOAuth1Client.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +32,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E6E22CE3A4C1E039F6CE369 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE7E134959BFB97667842C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D323B1801BA8C09400AEEA5D /* AudioHack iOS Elements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AudioHack iOS Elements.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D323B1841BA8C09400AEEA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D323B1851BA8C09400AEEA5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D323B1871BA8C09400AEEA5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D323B1881BA8C09400AEEA5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D323B18B1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AudioHack_iOS_Elements.xcdatamodel; sourceTree = "<group>"; };
-		D323B18D1BA8C09400AEEA5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D323B18E1BA8C09400AEEA5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D323B1911BA8C09400AEEA5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D323B1931BA8C09400AEEA5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D323B1961BA8C09400AEEA5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D323B19C1BA8C09400AEEA5D /* AudioHack iOS ElementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AudioHack iOS ElementsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D323B1A11BA8C09400AEEA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D323B1A21BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioHack_iOS_ElementsTests.m; sourceTree = "<group>"; };
+		D323B1AC1BA8C21200AEEA5D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D323B1AD1BA8C21200AEEA5D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D323B1B31BA8C3D800AEEA5D /* ShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowsViewController.h; sourceTree = "<group>"; };
+		D323B1B41BA8C3D800AEEA5D /* ShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowsViewController.m; sourceTree = "<group>"; };
+		D323B1B61BA8C6AE00AEEA5D /* EpisodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodesViewController.h; sourceTree = "<group>"; };
+		D323B1B71BA8C6AE00AEEA5D /* EpisodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodesViewController.m; sourceTree = "<group>"; };
+		D3DF29991BA8DCA400E0954A /* AFOAuth1Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth1Client.h; sourceTree = "<group>"; };
+		D3DF299A1BA8DCA400E0954A /* AFOAuth1Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth1Client.m; sourceTree = "<group>"; };
+		E404884EEF3E287B55439123 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB003FDB39689E07A7A8252F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +76,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FC5EE4393C48886DFB3EABE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7E134959BFB97667842C9 /* Pods.debug.xcconfig */,
+				E404884EEF3E287B55439123 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3B4C7F91313140D07400F4C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E6E22CE3A4C1E039F6CE369 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D323B1771BA8C09400AEEA5D = {
 			isa = PBXGroup;
 			children = (
 				D323B1821BA8C09400AEEA5D /* AudioHack iOS Elements */,
 				D323B19F1BA8C09400AEEA5D /* AudioHack iOS ElementsTests */,
 				D323B1811BA8C09400AEEA5D /* Products */,
+				0FC5EE4393C48886DFB3EABE /* Pods */,
+				3B4C7F91313140D07400F4C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,10 +116,11 @@
 		D323B1821BA8C09400AEEA5D /* AudioHack iOS Elements */ = {
 			isa = PBXGroup;
 			children = (
+				D3DF29991BA8DCA400E0954A /* AFOAuth1Client.h */,
+				D3DF299A1BA8DCA400E0954A /* AFOAuth1Client.m */,
+				D323B1AF1BA8C22500AEEA5D /* VCs */,
 				D323B1871BA8C09400AEEA5D /* AppDelegate.h */,
 				D323B1881BA8C09400AEEA5D /* AppDelegate.m */,
-				D323B18D1BA8C09400AEEA5D /* ViewController.h */,
-				D323B18E1BA8C09400AEEA5D /* ViewController.m */,
 				D323B1901BA8C09400AEEA5D /* Main.storyboard */,
 				D323B1931BA8C09400AEEA5D /* Images.xcassets */,
 				D323B1951BA8C09400AEEA5D /* LaunchScreen.xib */,
@@ -122,6 +156,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D323B1AF1BA8C22500AEEA5D /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				D323B1AC1BA8C21200AEEA5D /* HomeViewController.h */,
+				D323B1AD1BA8C21200AEEA5D /* HomeViewController.m */,
+				D323B1B31BA8C3D800AEEA5D /* ShowsViewController.h */,
+				D323B1B41BA8C3D800AEEA5D /* ShowsViewController.m */,
+				D323B1B61BA8C6AE00AEEA5D /* EpisodesViewController.h */,
+				D323B1B71BA8C6AE00AEEA5D /* EpisodesViewController.m */,
+			);
+			name = VCs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D323B1A61BA8C09400AEEA5D /* Build configuration list for PBXNativeTarget "AudioHack iOS Elements" */;
 			buildPhases = (
+				9E0D2EDC342431851D44B244 /* Check Pods Manifest.lock */,
 				D323B17C1BA8C09400AEEA5D /* Sources */,
 				D323B17D1BA8C09400AEEA5D /* Frameworks */,
 				D323B17E1BA8C09400AEEA5D /* Resources */,
+				EF683BF1FB644F12BF3C0752 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +266,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9E0D2EDC342431851D44B244 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF683BF1FB644F12BF3C0752 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D323B17C1BA8C09400AEEA5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,8 +306,11 @@
 			files = (
 				D323B1891BA8C09400AEEA5D /* AppDelegate.m in Sources */,
 				D323B18C1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld in Sources */,
-				D323B18F1BA8C09400AEEA5D /* ViewController.m in Sources */,
 				D323B1861BA8C09400AEEA5D /* main.m in Sources */,
+				D323B1B51BA8C3D800AEEA5D /* ShowsViewController.m in Sources */,
+				D3DF299B1BA8DCA400E0954A /* AFOAuth1Client.m in Sources */,
+				D323B1B81BA8C6AE00AEEA5D /* EpisodesViewController.m in Sources */,
+				D323B1AE1BA8C21200AEEA5D /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +434,7 @@
 		};
 		D323B1A71BA8C09400AEEA5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE7E134959BFB97667842C9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "AudioHack iOS Elements/Info.plist";
@@ -359,6 +445,7 @@
 		};
 		D323B1A81BA8C09400AEEA5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E404884EEF3E287B55439123 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "AudioHack iOS Elements/Info.plist";
@@ -420,6 +507,7 @@
 				D323B1A81BA8C09400AEEA5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D323B1A91BA8C09400AEEA5D /* Build configuration list for PBXNativeTarget "AudioHack iOS ElementsTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +516,7 @@
 				D323B1AB1BA8C09400AEEA5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
