@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AFOAuth1Client.h"
+#import "AFOAuth2Manager.h"
 
 @interface AppDelegate ()
 
@@ -18,35 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSURL *baseURL = [NSURL URLWithString:@"https://www.audiosear.ch/"];
-    AFOAuth1Client *OAuth1Client = [[AFOAuth1Client alloc] initWithBaseURL:baseURL
-                                                                       key:@"e99abb083fb6411c1681d878dc72b9c7f1e0cf64c4c5882b4ccf565319f2686b"
-                                                                    secret:@"14a2280147c006303afe797fedb49f6e17d5b09e601e38cba51d22a4942babc4"];
 
-    NSURL *callbackURL = [NSURL URLWithString:@"x-com-YOUR-APP-SCHEME://success"];
+    NSURL *baseURL = [NSURL URLWithString:@"https://www.audiosear.ch/api/"];
+    AFOAuth2Manager *OAuth2Manager = [[AFOAuth2Manager alloc] initWithBaseURL:baseURL
+                                                                     clientID:@"e99abb083fb6411c1681d878dc72b9c7f1e0cf64c4c5882b4ccf565319f2686b"
+                                                                       secret:@"14a2280147c006303afe797fedb49f6e17d5b09e601e38cba51d22a4942babc4"];
     
-    [OAuth1Client authorizeUsingOAuthWithRequestTokenPath:@"/api/oauth/token"
-                                    userAuthorizationPath:@"/api/oauth/authorize"
-                                              callbackURL:callbackURL
-                                          accessTokenPath:@"/access_token"
-                                             accessMethod:@""
-                                                    scope:@""
-                                                  success:^(AFOAuth1Token *accessToken, id responseObject) {
-                                                      NSLog(@"Success: %@", accessToken);
-                                                  } failure:^(NSError *error) {
-                                                      NSLog(@"Error: %@", error);
-                                                  }];
-    
-    return YES;
-}
-
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)URL sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-{
-    NSNotification *notification = [NSNotification notificationWithName:kAFApplicationLaunchedWithURLNotification
-                                                                 object:nil
-                                                               userInfo:@{kAFApplicationLaunchOptionsURLKey: URL}];
-    
-    [[NSNotificationCenter defaultCenter] postNotification:notification];
+    [OAuth2Manager authenticateUsingOAuthWithURLString:@"/oauth/token"
+                                              username:@"username"
+                                              password:@"password"
+                                                 scope:@"email"
+                                               success:^(AFOAuthCredential *credential) {
+                                                   NSLog(@"Token: %@", credential.accessToken);
+                                               }
+                                               failure:^(NSError *error) {
+                                                   NSLog(@"Error: %@", error);
+                                               }];
     
     return YES;
 }

@@ -18,7 +18,8 @@
 		D323B1AE1BA8C21200AEEA5D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1AD1BA8C21200AEEA5D /* HomeViewController.m */; };
 		D323B1B51BA8C3D800AEEA5D /* ShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B41BA8C3D800AEEA5D /* ShowsViewController.m */; };
 		D323B1B81BA8C6AE00AEEA5D /* EpisodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B71BA8C6AE00AEEA5D /* EpisodesViewController.m */; };
-		D3DF299B1BA8DCA400E0954A /* AFOAuth1Client.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DF299A1BA8DCA400E0954A /* AFOAuth1Client.m */; };
+		D3DCC16F1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DCC16C1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m */; };
+		D3DCC1701BAA05BB005FC133 /* AFOAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DCC16E1BAA05BB005FC133 /* AFOAuth2Manager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,10 @@
 		D323B1B41BA8C3D800AEEA5D /* ShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowsViewController.m; sourceTree = "<group>"; };
 		D323B1B61BA8C6AE00AEEA5D /* EpisodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodesViewController.h; sourceTree = "<group>"; };
 		D323B1B71BA8C6AE00AEEA5D /* EpisodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodesViewController.m; sourceTree = "<group>"; };
-		D3DF29991BA8DCA400E0954A /* AFOAuth1Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth1Client.h; sourceTree = "<group>"; };
-		D3DF299A1BA8DCA400E0954A /* AFOAuth1Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth1Client.m; sourceTree = "<group>"; };
+		D3DCC16B1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestSerializer+OAuth2.h"; sourceTree = "<group>"; };
+		D3DCC16C1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestSerializer+OAuth2.m"; sourceTree = "<group>"; };
+		D3DCC16D1BAA05BB005FC133 /* AFOAuth2Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth2Manager.h; sourceTree = "<group>"; };
+		D3DCC16E1BAA05BB005FC133 /* AFOAuth2Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth2Manager.m; sourceTree = "<group>"; };
 		E404884EEF3E287B55439123 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,8 +119,10 @@
 		D323B1821BA8C09400AEEA5D /* AudioHack iOS Elements */ = {
 			isa = PBXGroup;
 			children = (
-				D3DF29991BA8DCA400E0954A /* AFOAuth1Client.h */,
-				D3DF299A1BA8DCA400E0954A /* AFOAuth1Client.m */,
+				D3DCC16B1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.h */,
+				D3DCC16C1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m */,
+				D3DCC16D1BAA05BB005FC133 /* AFOAuth2Manager.h */,
+				D3DCC16E1BAA05BB005FC133 /* AFOAuth2Manager.m */,
 				D323B1AF1BA8C22500AEEA5D /* VCs */,
 				D323B1871BA8C09400AEEA5D /* AppDelegate.h */,
 				D323B1881BA8C09400AEEA5D /* AppDelegate.m */,
@@ -308,8 +313,9 @@
 				D323B18C1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld in Sources */,
 				D323B1861BA8C09400AEEA5D /* main.m in Sources */,
 				D323B1B51BA8C3D800AEEA5D /* ShowsViewController.m in Sources */,
-				D3DF299B1BA8DCA400E0954A /* AFOAuth1Client.m in Sources */,
 				D323B1B81BA8C6AE00AEEA5D /* EpisodesViewController.m in Sources */,
+				D3DCC16F1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
+				D3DCC1701BAA05BB005FC133 /* AFOAuth2Manager.m in Sources */,
 				D323B1AE1BA8C21200AEEA5D /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
