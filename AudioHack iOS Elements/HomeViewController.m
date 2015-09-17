@@ -39,7 +39,7 @@
     
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = @"Shows";
+            cell.textLabel.text = @"Podcasts";
             break;
         case 1:
             cell.textLabel.text = @"Friends";
@@ -57,7 +57,7 @@
 {
     switch (indexPath.row) {
         case 0:
-            [self performSegueWithIdentifier:@"Shows" sender:self];
+            [self performSegueWithIdentifier:@"Podcasts" sender:self];
             break;
         case 1:
             [self performSegueWithIdentifier:@"Friends" sender:self];

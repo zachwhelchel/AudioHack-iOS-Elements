@@ -7,18 +7,70 @@
 //
 
 #import "ShowsViewController.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "Show.h"
 
 @interface ShowsViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *shows;
 
 @end
 
 @implementation ShowsViewController
 
+@synthesize podcast = _podcast;
+@synthesize shows = _shows;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if ([self.podcast isEqualToString:@"This American Life"]) {
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        [manager GET:@"http://hackathon.thisamericanlife.org/api/episodes" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+            // Parse each of these incoming feeds into the objects we like. So no matter where we pull each of these things from we can save them for ourselves.
+            
+            NSDictionary *responseDict = responseObject;
+            NSArray *episodes = [responseDict valueForKey:@"data"];
+            
+            NSMutableArray *array = [NSMutableArray array];
+            
+            for (NSDictionary *episode in episodes) {
+                
+                Show *show = [[Show alloc] init];
+                show.name = [episode valueForKey:@"title"];
+                
+                // check if we already have the object with that id first before adding it.
+                
+                /*
+                RLMRealm *realm = [RLMRealm defaultRealm];
+                [realm transactionWithBlock:^{
+                    [realm addObject:show];
+                }];
+                */
+                
+                [array addObject:show];
+                
+                NSLog(@"----");
+                NSLog(@"%@", episode);
+                NSLog(@"----");
+
+            }
+            
+            self.shows = [array copy];
+
+            [self.tableView reloadData];
+            
+            
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"Error: %@", error);
+        }];
+    }
+    else {
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,38 +82,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return self.shows.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    
-    switch (indexPath.row) {
-        case 0:
-            cell.textLabel.text = @"Show 1";
-            break;
-        case 1:
-            cell.textLabel.text = @"Show 2";
-            break;
-        case 2:
-            cell.textLabel.text = @"Show 3";
-            break;
-        case 3:
-            cell.textLabel.text = @"Show 4";
-            break;
-        default:
-            break;
-    }
-    
+    Show *show = [self.shows objectAtIndex:indexPath.row];
+    cell.textLabel.text = show.name;
     return cell;
-}
-
-#pragma mark - UITableViewDelegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [self performSegueWithIdentifier:@"Episodes" sender:self];
 }
 
 #pragma mark - Navigation

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		104259D9FD644BEC04A620C6 /* libPods-AudioHack iOS ElementsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A30145754885241F8637781 /* libPods-AudioHack iOS ElementsTests.a */; };
 		BB003FDB39689E07A7A8252F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6E22CE3A4C1E039F6CE369 /* libPods.a */; };
 		D323B1861BA8C09400AEEA5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1851BA8C09400AEEA5D /* main.m */; };
 		D323B1891BA8C09400AEEA5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1881BA8C09400AEEA5D /* AppDelegate.m */; };
@@ -16,10 +17,16 @@
 		D323B1971BA8C09400AEEA5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D323B1951BA8C09400AEEA5D /* LaunchScreen.xib */; };
 		D323B1A31BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1A21BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m */; };
 		D323B1AE1BA8C21200AEEA5D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1AD1BA8C21200AEEA5D /* HomeViewController.m */; };
-		D323B1B51BA8C3D800AEEA5D /* ShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B41BA8C3D800AEEA5D /* ShowsViewController.m */; };
-		D323B1B81BA8C6AE00AEEA5D /* EpisodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B71BA8C6AE00AEEA5D /* EpisodesViewController.m */; };
+		D323B1B51BA8C3D800AEEA5D /* PodcastsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B41BA8C3D800AEEA5D /* PodcastsViewController.m */; };
+		D323B1B81BA8C6AE00AEEA5D /* ShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B71BA8C6AE00AEEA5D /* ShowsViewController.m */; };
+		D3CAD9BB1BAB516B00839CC8 /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD9BA1BAB516B00839CC8 /* Podcast.m */; settings = {ASSET_TAGS = (); }; };
+		D3CAD9BE1BAB519400839CC8 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD9BD1BAB519400839CC8 /* Show.m */; settings = {ASSET_TAGS = (); }; };
+		D3CAD9C21BAB562900839CC8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CAD9C11BAB562900839CC8 /* libc++.tbd */; };
+		D3DA94361BAB5AAB006F056A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CAD9BF1BAB561100839CC8 /* Realm.framework */; };
+		D3DA94391BAB5E83006F056A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA94381BAB5E83006F056A /* SearchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D3DCC16F1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DCC16C1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m */; };
 		D3DCC1701BAA05BB005FC133 /* AFOAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DCC16E1BAA05BB005FC133 /* AFOAuth2Manager.m */; };
+		F6D502808AEF1457C04118A7 /* libPods-AudioHack iOS Elements.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87F3A96EECB89A5AC366CD2 /* libPods-AudioHack iOS Elements.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A30145754885241F8637781 /* libPods-AudioHack iOS ElementsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioHack iOS ElementsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F81F0A18B722C574E77E06 /* Pods-AudioHack iOS ElementsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioHack iOS ElementsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioHack iOS ElementsTests/Pods-AudioHack iOS ElementsTests.release.xcconfig"; sourceTree = "<group>"; };
 		4E6E22CE3A4C1E039F6CE369 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE7E134959BFB97667842C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A752D726D2CF9D7E873E379F /* Pods-AudioHack iOS ElementsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioHack iOS ElementsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioHack iOS ElementsTests/Pods-AudioHack iOS ElementsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D323B1801BA8C09400AEEA5D /* AudioHack iOS Elements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AudioHack iOS Elements.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D323B1841BA8C09400AEEA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D323B1851BA8C09400AEEA5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,15 +59,25 @@
 		D323B1A21BA8C09400AEEA5D /* AudioHack_iOS_ElementsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioHack_iOS_ElementsTests.m; sourceTree = "<group>"; };
 		D323B1AC1BA8C21200AEEA5D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		D323B1AD1BA8C21200AEEA5D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		D323B1B31BA8C3D800AEEA5D /* ShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowsViewController.h; sourceTree = "<group>"; };
-		D323B1B41BA8C3D800AEEA5D /* ShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowsViewController.m; sourceTree = "<group>"; };
-		D323B1B61BA8C6AE00AEEA5D /* EpisodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpisodesViewController.h; sourceTree = "<group>"; };
-		D323B1B71BA8C6AE00AEEA5D /* EpisodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpisodesViewController.m; sourceTree = "<group>"; };
+		D323B1B31BA8C3D800AEEA5D /* PodcastsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastsViewController.h; sourceTree = "<group>"; };
+		D323B1B41BA8C3D800AEEA5D /* PodcastsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastsViewController.m; sourceTree = "<group>"; };
+		D323B1B61BA8C6AE00AEEA5D /* ShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowsViewController.h; sourceTree = "<group>"; };
+		D323B1B71BA8C6AE00AEEA5D /* ShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowsViewController.m; sourceTree = "<group>"; };
+		D34EEEE51BAB3DC700A56BF5 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D3CAD9B91BAB516B00839CC8 /* Podcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Podcast.h; sourceTree = "<group>"; };
+		D3CAD9BA1BAB516B00839CC8 /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Podcast.m; sourceTree = "<group>"; };
+		D3CAD9BC1BAB519400839CC8 /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
+		D3CAD9BD1BAB519400839CC8 /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
+		D3CAD9BF1BAB561100839CC8 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		D3CAD9C11BAB562900839CC8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D3DA94371BAB5E83006F056A /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		D3DA94381BAB5E83006F056A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		D3DCC16B1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestSerializer+OAuth2.h"; sourceTree = "<group>"; };
 		D3DCC16C1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestSerializer+OAuth2.m"; sourceTree = "<group>"; };
 		D3DCC16D1BAA05BB005FC133 /* AFOAuth2Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth2Manager.h; sourceTree = "<group>"; };
 		D3DCC16E1BAA05BB005FC133 /* AFOAuth2Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth2Manager.m; sourceTree = "<group>"; };
 		E404884EEF3E287B55439123 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E87F3A96EECB89A5AC366CD2 /* libPods-AudioHack iOS Elements.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AudioHack iOS Elements.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3DA94361BAB5AAB006F056A /* Realm.framework in Frameworks */,
+				D3CAD9C21BAB562900839CC8 /* libc++.tbd in Frameworks */,
 				BB003FDB39689E07A7A8252F /* libPods.a in Frameworks */,
+				F6D502808AEF1457C04118A7 /* libPods-AudioHack iOS Elements.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104259D9FD644BEC04A620C6 /* libPods-AudioHack iOS ElementsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +108,8 @@
 			children = (
 				4FE7E134959BFB97667842C9 /* Pods.debug.xcconfig */,
 				E404884EEF3E287B55439123 /* Pods.release.xcconfig */,
+				A752D726D2CF9D7E873E379F /* Pods-AudioHack iOS ElementsTests.debug.xcconfig */,
+				40F81F0A18B722C574E77E06 /* Pods-AudioHack iOS ElementsTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -91,7 +117,11 @@
 		3B4C7F91313140D07400F4C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3CAD9C11BAB562900839CC8 /* libc++.tbd */,
+				D34EEEE51BAB3DC700A56BF5 /* libc++.dylib */,
 				4E6E22CE3A4C1E039F6CE369 /* libPods.a */,
+				E87F3A96EECB89A5AC366CD2 /* libPods-AudioHack iOS Elements.a */,
+				0A30145754885241F8637781 /* libPods-AudioHack iOS ElementsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +153,11 @@
 				D3DCC16C1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m */,
 				D3DCC16D1BAA05BB005FC133 /* AFOAuth2Manager.h */,
 				D3DCC16E1BAA05BB005FC133 /* AFOAuth2Manager.m */,
+				D3CAD9B91BAB516B00839CC8 /* Podcast.h */,
+				D3CAD9BA1BAB516B00839CC8 /* Podcast.m */,
+				D3CAD9BC1BAB519400839CC8 /* Show.h */,
+				D3CAD9BD1BAB519400839CC8 /* Show.m */,
+				D3CAD9BF1BAB561100839CC8 /* Realm.framework */,
 				D323B1AF1BA8C22500AEEA5D /* VCs */,
 				D323B1871BA8C09400AEEA5D /* AppDelegate.h */,
 				D323B1881BA8C09400AEEA5D /* AppDelegate.m */,
@@ -166,10 +201,12 @@
 			children = (
 				D323B1AC1BA8C21200AEEA5D /* HomeViewController.h */,
 				D323B1AD1BA8C21200AEEA5D /* HomeViewController.m */,
-				D323B1B31BA8C3D800AEEA5D /* ShowsViewController.h */,
-				D323B1B41BA8C3D800AEEA5D /* ShowsViewController.m */,
-				D323B1B61BA8C6AE00AEEA5D /* EpisodesViewController.h */,
-				D323B1B71BA8C6AE00AEEA5D /* EpisodesViewController.m */,
+				D323B1B31BA8C3D800AEEA5D /* PodcastsViewController.h */,
+				D323B1B41BA8C3D800AEEA5D /* PodcastsViewController.m */,
+				D323B1B61BA8C6AE00AEEA5D /* ShowsViewController.h */,
+				D323B1B71BA8C6AE00AEEA5D /* ShowsViewController.m */,
+				D3DA94371BAB5E83006F056A /* SearchViewController.h */,
+				D3DA94381BAB5E83006F056A /* SearchViewController.m */,
 			);
 			name = VCs;
 			sourceTree = "<group>";
@@ -200,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D323B1A91BA8C09400AEEA5D /* Build configuration list for PBXNativeTarget "AudioHack iOS ElementsTests" */;
 			buildPhases = (
+				DE9504F1F364534291333114 /* Check Pods Manifest.lock */,
 				D323B1981BA8C09400AEEA5D /* Sources */,
 				D323B1991BA8C09400AEEA5D /* Frameworks */,
 				D323B19A1BA8C09400AEEA5D /* Resources */,
+				24B1E1256C93695F3761689B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,7 +311,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		24B1E1256C93695F3761689B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioHack iOS ElementsTests/Pods-AudioHack iOS ElementsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9E0D2EDC342431851D44B244 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE9504F1F364534291333114 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,7 +368,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioHack iOS Elements/Pods-AudioHack iOS Elements-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -309,12 +378,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CAD9BE1BAB519400839CC8 /* Show.m in Sources */,
 				D323B1891BA8C09400AEEA5D /* AppDelegate.m in Sources */,
 				D323B18C1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld in Sources */,
 				D323B1861BA8C09400AEEA5D /* main.m in Sources */,
-				D323B1B51BA8C3D800AEEA5D /* ShowsViewController.m in Sources */,
-				D323B1B81BA8C6AE00AEEA5D /* EpisodesViewController.m in Sources */,
+				D3CAD9BB1BAB516B00839CC8 /* Podcast.m in Sources */,
+				D323B1B51BA8C3D800AEEA5D /* PodcastsViewController.m in Sources */,
+				D323B1B81BA8C6AE00AEEA5D /* ShowsViewController.m in Sources */,
 				D3DCC16F1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
+				D3DA94391BAB5E83006F056A /* SearchViewController.m in Sources */,
 				D3DCC1701BAA05BB005FC133 /* AFOAuth2Manager.m in Sources */,
 				D323B1AE1BA8C21200AEEA5D /* HomeViewController.m in Sources */,
 			);
@@ -443,6 +515,21 @@
 			baseConfigurationReference = 4FE7E134959BFB97667842C9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
+				);
 				INFOPLIST_FILE = "AudioHack iOS Elements/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,6 +541,21 @@
 			baseConfigurationReference = E404884EEF3E287B55439123 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
+				);
 				INFOPLIST_FILE = "AudioHack iOS Elements/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,6 +564,7 @@
 		};
 		D323B1AA1BA8C09400AEEA5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A752D726D2CF9D7E873E379F /* Pods-AudioHack iOS ElementsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -481,6 +584,7 @@
 		};
 		D323B1AB1BA8C09400AEEA5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F81F0A18B722C574E77E06 /* Pods-AudioHack iOS ElementsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

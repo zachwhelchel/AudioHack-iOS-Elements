@@ -10,4 +10,6 @@
 
 @interface ShowsViewController : UIViewController
 
+@property (nonatomic, strong) NSString *podcast;
+
 @end
