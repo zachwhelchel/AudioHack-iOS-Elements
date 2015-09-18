@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Podcast.h"
 
 @interface ShowsViewController : UIViewController
 
-@property (nonatomic, strong) NSString *podcast;
+@property (nonatomic, strong) Podcast *podcast;
 
 @end

@@ -10,6 +10,12 @@
 
 @interface Show : RLMObject
 @property NSString *name;
+@property NSString *showDescription;
+@property int duration;
+@property NSString *mp3URL;
+@property NSString *originalAirDate;
+@property NSString *informationURL;
+@property NSString *photoURL;
 @end
 
 RLM_ARRAY_TYPE(Show)

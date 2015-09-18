@@ -11,7 +11,6 @@
 		BB003FDB39689E07A7A8252F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6E22CE3A4C1E039F6CE369 /* libPods.a */; };
 		D323B1861BA8C09400AEEA5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1851BA8C09400AEEA5D /* main.m */; };
 		D323B1891BA8C09400AEEA5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1881BA8C09400AEEA5D /* AppDelegate.m */; };
-		D323B18C1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D323B18A1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld */; };
 		D323B1921BA8C09400AEEA5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D323B1901BA8C09400AEEA5D /* Main.storyboard */; };
 		D323B1941BA8C09400AEEA5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D323B1931BA8C09400AEEA5D /* Images.xcassets */; };
 		D323B1971BA8C09400AEEA5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D323B1951BA8C09400AEEA5D /* LaunchScreen.xib */; };
@@ -19,10 +18,13 @@
 		D323B1AE1BA8C21200AEEA5D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1AD1BA8C21200AEEA5D /* HomeViewController.m */; };
 		D323B1B51BA8C3D800AEEA5D /* PodcastsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B41BA8C3D800AEEA5D /* PodcastsViewController.m */; };
 		D323B1B81BA8C6AE00AEEA5D /* ShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B71BA8C6AE00AEEA5D /* ShowsViewController.m */; };
+		D3802CB51BAB9075007E6213 /* PodcastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3802CB41BAB9075007E6213 /* PodcastManager.m */; settings = {ASSET_TAGS = (); }; };
+		D3802CBA1BAB9399007E6213 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CAD9BF1BAB561100839CC8 /* Realm.framework */; };
+		D3802CBD1BABA2F4007E6213 /* DefaultsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3802CBC1BABA2F4007E6213 /* DefaultsHelper.m */; settings = {ASSET_TAGS = (); }; };
+		D3802CC01BABBC43007E6213 /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3802CBF1BABBC43007E6213 /* ShowViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D3CAD9BB1BAB516B00839CC8 /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD9BA1BAB516B00839CC8 /* Podcast.m */; settings = {ASSET_TAGS = (); }; };
 		D3CAD9BE1BAB519400839CC8 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD9BD1BAB519400839CC8 /* Show.m */; settings = {ASSET_TAGS = (); }; };
 		D3CAD9C21BAB562900839CC8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CAD9C11BAB562900839CC8 /* libc++.tbd */; };
-		D3DA94361BAB5AAB006F056A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CAD9BF1BAB561100839CC8 /* Realm.framework */; };
 		D3DA94391BAB5E83006F056A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA94381BAB5E83006F056A /* SearchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D3DCC16F1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DCC16C1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m */; };
 		D3DCC1701BAA05BB005FC133 /* AFOAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DCC16E1BAA05BB005FC133 /* AFOAuth2Manager.m */; };
@@ -50,7 +52,6 @@
 		D323B1851BA8C09400AEEA5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D323B1871BA8C09400AEEA5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D323B1881BA8C09400AEEA5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D323B18B1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AudioHack_iOS_Elements.xcdatamodel; sourceTree = "<group>"; };
 		D323B1911BA8C09400AEEA5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D323B1931BA8C09400AEEA5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D323B1961BA8C09400AEEA5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -64,6 +65,12 @@
 		D323B1B61BA8C6AE00AEEA5D /* ShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowsViewController.h; sourceTree = "<group>"; };
 		D323B1B71BA8C6AE00AEEA5D /* ShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowsViewController.m; sourceTree = "<group>"; };
 		D34EEEE51BAB3DC700A56BF5 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D3802CB31BAB9075007E6213 /* PodcastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastManager.h; sourceTree = "<group>"; };
+		D3802CB41BAB9075007E6213 /* PodcastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastManager.m; sourceTree = "<group>"; };
+		D3802CBB1BABA2F4007E6213 /* DefaultsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultsHelper.h; sourceTree = "<group>"; };
+		D3802CBC1BABA2F4007E6213 /* DefaultsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultsHelper.m; sourceTree = "<group>"; };
+		D3802CBE1BABBC43007E6213 /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		D3802CBF1BABBC43007E6213 /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
 		D3CAD9B91BAB516B00839CC8 /* Podcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Podcast.h; sourceTree = "<group>"; };
 		D3CAD9BA1BAB516B00839CC8 /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Podcast.m; sourceTree = "<group>"; };
 		D3CAD9BC1BAB519400839CC8 /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
@@ -85,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3DA94361BAB5AAB006F056A /* Realm.framework in Frameworks */,
+				D3802CBA1BAB9399007E6213 /* Realm.framework in Frameworks */,
 				D3CAD9C21BAB562900839CC8 /* libc++.tbd in Frameworks */,
 				BB003FDB39689E07A7A8252F /* libPods.a in Frameworks */,
 				F6D502808AEF1457C04118A7 /* libPods-AudioHack iOS Elements.a in Frameworks */,
@@ -149,22 +156,15 @@
 		D323B1821BA8C09400AEEA5D /* AudioHack iOS Elements */ = {
 			isa = PBXGroup;
 			children = (
-				D3DCC16B1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.h */,
-				D3DCC16C1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m */,
-				D3DCC16D1BAA05BB005FC133 /* AFOAuth2Manager.h */,
-				D3DCC16E1BAA05BB005FC133 /* AFOAuth2Manager.m */,
-				D3CAD9B91BAB516B00839CC8 /* Podcast.h */,
-				D3CAD9BA1BAB516B00839CC8 /* Podcast.m */,
-				D3CAD9BC1BAB519400839CC8 /* Show.h */,
-				D3CAD9BD1BAB519400839CC8 /* Show.m */,
-				D3CAD9BF1BAB561100839CC8 /* Realm.framework */,
-				D323B1AF1BA8C22500AEEA5D /* VCs */,
 				D323B1871BA8C09400AEEA5D /* AppDelegate.h */,
 				D323B1881BA8C09400AEEA5D /* AppDelegate.m */,
+				D3802CB91BAB9114007E6213 /* Helpers */,
+				D3802CB81BAB910A007E6213 /* Model */,
+				D323B1AF1BA8C22500AEEA5D /* VCs */,
 				D323B1901BA8C09400AEEA5D /* Main.storyboard */,
 				D323B1931BA8C09400AEEA5D /* Images.xcassets */,
 				D323B1951BA8C09400AEEA5D /* LaunchScreen.xib */,
-				D323B18A1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld */,
+				D3802CB61BAB9099007E6213 /* Dependencies */,
 				D323B1831BA8C09400AEEA5D /* Supporting Files */,
 			);
 			path = "AudioHack iOS Elements";
@@ -207,8 +207,52 @@
 				D323B1B71BA8C6AE00AEEA5D /* ShowsViewController.m */,
 				D3DA94371BAB5E83006F056A /* SearchViewController.h */,
 				D3DA94381BAB5E83006F056A /* SearchViewController.m */,
+				D3802CBE1BABBC43007E6213 /* ShowViewController.h */,
+				D3802CBF1BABBC43007E6213 /* ShowViewController.m */,
 			);
 			name = VCs;
+			sourceTree = "<group>";
+		};
+		D3802CB61BAB9099007E6213 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD9BF1BAB561100839CC8 /* Realm.framework */,
+				D3802CB71BAB90BD007E6213 /* AFOAuth2Manager */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		D3802CB71BAB90BD007E6213 /* AFOAuth2Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D3DCC16B1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.h */,
+				D3DCC16C1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m */,
+				D3DCC16D1BAA05BB005FC133 /* AFOAuth2Manager.h */,
+				D3DCC16E1BAA05BB005FC133 /* AFOAuth2Manager.m */,
+			);
+			name = AFOAuth2Manager;
+			sourceTree = "<group>";
+		};
+		D3802CB81BAB910A007E6213 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAD9B91BAB516B00839CC8 /* Podcast.h */,
+				D3CAD9BA1BAB516B00839CC8 /* Podcast.m */,
+				D3CAD9BC1BAB519400839CC8 /* Show.h */,
+				D3CAD9BD1BAB519400839CC8 /* Show.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D3802CB91BAB9114007E6213 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D3802CB31BAB9075007E6213 /* PodcastManager.h */,
+				D3802CB41BAB9075007E6213 /* PodcastManager.m */,
+				D3802CBB1BABA2F4007E6213 /* DefaultsHelper.h */,
+				D3802CBC1BABA2F4007E6213 /* DefaultsHelper.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,15 +424,17 @@
 			files = (
 				D3CAD9BE1BAB519400839CC8 /* Show.m in Sources */,
 				D323B1891BA8C09400AEEA5D /* AppDelegate.m in Sources */,
-				D323B18C1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld in Sources */,
 				D323B1861BA8C09400AEEA5D /* main.m in Sources */,
 				D3CAD9BB1BAB516B00839CC8 /* Podcast.m in Sources */,
 				D323B1B51BA8C3D800AEEA5D /* PodcastsViewController.m in Sources */,
 				D323B1B81BA8C6AE00AEEA5D /* ShowsViewController.m in Sources */,
 				D3DCC16F1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
+				D3802CB51BAB9075007E6213 /* PodcastManager.m in Sources */,
 				D3DA94391BAB5E83006F056A /* SearchViewController.m in Sources */,
 				D3DCC1701BAA05BB005FC133 /* AFOAuth2Manager.m in Sources */,
 				D323B1AE1BA8C21200AEEA5D /* HomeViewController.m in Sources */,
+				D3802CC01BABBC43007E6213 /* ShowViewController.m in Sources */,
+				D3802CBD1BABA2F4007E6213 /* DefaultsHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +575,9 @@
 					"$(PROJECT_DIR)/AudioHack",
 					iOS,
 					Elements,
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
 				);
 				INFOPLIST_FILE = "AudioHack iOS Elements/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -543,6 +592,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
 					"$(PROJECT_DIR)/AudioHack",
 					iOS,
 					Elements,
@@ -629,19 +681,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D323B18A1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D323B18B1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodel */,
-			);
-			currentVersion = D323B18B1BA8C09400AEEA5D /* AudioHack_iOS_Elements.xcdatamodel */;
-			path = AudioHack_iOS_Elements.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D323B1781BA8C09400AEEA5D /* Project object */;
 }

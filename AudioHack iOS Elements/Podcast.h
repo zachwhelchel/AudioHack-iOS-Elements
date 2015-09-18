@@ -11,6 +11,8 @@
 
 @interface Podcast : RLMObject
 @property NSString *name;
+@property NSString *refreshSource;
+@property int refreshSourceSpecificId;
 @property RLMArray<Show *><Show> *shows;
 @end
 

@@ -13,64 +13,21 @@
 @interface ShowsViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSArray *shows;
 
 @end
 
 @implementation ShowsViewController
 
 @synthesize podcast = _podcast;
-@synthesize shows = _shows;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    if ([self.podcast isEqualToString:@"This American Life"]) {
-        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-        [manager GET:@"http://hackathon.thisamericanlife.org/api/episodes" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+}
 
-            // Parse each of these incoming feeds into the objects we like. So no matter where we pull each of these things from we can save them for ourselves.
-            
-            NSDictionary *responseDict = responseObject;
-            NSArray *episodes = [responseDict valueForKey:@"data"];
-            
-            NSMutableArray *array = [NSMutableArray array];
-            
-            for (NSDictionary *episode in episodes) {
-                
-                Show *show = [[Show alloc] init];
-                show.name = [episode valueForKey:@"title"];
-                
-                // check if we already have the object with that id first before adding it.
-                
-                /*
-                RLMRealm *realm = [RLMRealm defaultRealm];
-                [realm transactionWithBlock:^{
-                    [realm addObject:show];
-                }];
-                */
-                
-                [array addObject:show];
-                
-                NSLog(@"----");
-                NSLog(@"%@", episode);
-                NSLog(@"----");
-
-            }
-            
-            self.shows = [array copy];
-
-            [self.tableView reloadData];
-            
-            
-        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            NSLog(@"Error: %@", error);
-        }];
-    }
-    else {
-        
-    }
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -82,15 +39,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.shows.count;
+    return self.podcast.shows.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    Show *show = [self.shows objectAtIndex:indexPath.row];
+    Show *show = [self.podcast.shows objectAtIndex:indexPath.row];
     cell.textLabel.text = show.name;
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"Show" sender:self];
 }
 
 #pragma mark - Navigation

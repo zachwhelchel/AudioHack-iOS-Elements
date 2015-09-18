@@ -9,21 +9,20 @@
 #import "SearchViewController.h"
 #import "AFOAuth2Manager.h"
 #import "AFHTTPRequestSerializer+OAuth2.h"
-
-#define kAudioSearchIdentifier @"audiosear.ch"
+#import "PodcastManager.h"
 
 @interface SearchViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *searchSegmentedControl;
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
-@property (strong, nonatomic) NSArray *shows;
+@property (strong, nonatomic) NSArray *podcastDicts;
 
 @end
 
 @implementation SearchViewController
 
-@synthesize shows = _shows;
+@synthesize podcastDicts = _podcastDicts;
 
 - (void)viewDidLoad
 {
@@ -72,22 +71,8 @@
       parameters:nil
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              
-             
-             
-             
-             NSDictionary *responseDict = responseObject;
-             NSArray *shows = [responseDict valueForKey:@"results"];
-             
-             NSMutableArray *array = [NSMutableArray array];
-             
-             for (NSDictionary *show in shows) {
-                 [array addObject:[show valueForKey:@"title"]];
-             }
-             
-             self.shows = [array copy];
-             
+             self.podcastDicts = [responseObject valueForKey:@"results"];
              [self.tableView reloadData];
-             
          }
          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
              NSLog(@"Failure: %@", error);
@@ -99,14 +84,28 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.shows.count;
+    return self.podcastDicts.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    cell.textLabel.text = [self.shows objectAtIndex:indexPath.row];
+    cell.textLabel.text = [[self.podcastDicts objectAtIndex:indexPath.row] valueForKey:@"title"]; // assumes audiosear.ch
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *podcastDict = [self.podcastDicts objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    
+    Podcast *podcast = [PodcastManager addPodcast:podcastDict inputSource:@"audiosearch"];  // assumes audiosear.ch
+    [PodcastManager refreshShowListForPodcast:podcast];
+
+    
+    
+    
 }
 
 /*

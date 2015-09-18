@@ -8,11 +8,13 @@
 
 #import "PodcastsViewController.h"
 #import "ShowsViewController.h"
+#import "PodcastManager.h"
+#import "Podcast.h"
 
 @interface PodcastsViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSArray *podcasts;
+@property (strong, nonatomic) RLMResults *podcasts;
 
 @end
 
@@ -23,12 +25,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.podcasts = [NSArray arrayWithObjects:
-                     @"This American Life",
-                     @"Show 2",
-                     @"Show 3",
-                     @"Show 4", nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.podcasts = [PodcastManager podcasts];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,7 +48,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    cell.textLabel.text = [self.podcasts objectAtIndex:indexPath.row];
+    Podcast *podcast = [self.podcasts objectAtIndex:indexPath.row];
+    cell.textLabel.text = podcast.name;
     return cell;
 }
 
@@ -62,10 +65,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"Shows"]) {
-        if ([[self.podcasts objectAtIndex:self.tableView.indexPathForSelectedRow.row] isEqualToString:@"This American Life"]) {
-            ShowsViewController *showsViewController = (ShowsViewController *)segue.destinationViewController;
-            showsViewController.podcast = @"This American Life";
-        }
+        ShowsViewController *showsViewController = (ShowsViewController *)segue.destinationViewController;
+        showsViewController.podcast = [self.podcasts objectAtIndex:self.tableView.indexPathForSelectedRow.row];
     }
 }
 
