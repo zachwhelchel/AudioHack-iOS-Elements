@@ -12,7 +12,7 @@
 
 + (Firebase *)baseFirebaseReference
 {
-    return [[Firebase alloc] initWithUrl:@"https://sweet-nothings.firebaseio.com"];
+    return [[Firebase alloc] initWithUrl:@"https://audiohack.firebaseio.com"];
 }
 
 + (Firebase *)userFirebaseReference
