@@ -19,12 +19,18 @@
 		D323B1B51BA8C3D800AEEA5D /* PodcastsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B41BA8C3D800AEEA5D /* PodcastsViewController.m */; };
 		D323B1B81BA8C6AE00AEEA5D /* ShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D323B1B71BA8C6AE00AEEA5D /* ShowsViewController.m */; };
 		D3802CB51BAB9075007E6213 /* PodcastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3802CB41BAB9075007E6213 /* PodcastManager.m */; settings = {ASSET_TAGS = (); }; };
-		D3802CBA1BAB9399007E6213 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CAD9BF1BAB561100839CC8 /* Realm.framework */; };
 		D3802CBD1BABA2F4007E6213 /* DefaultsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3802CBC1BABA2F4007E6213 /* DefaultsHelper.m */; settings = {ASSET_TAGS = (); }; };
 		D3802CC01BABBC43007E6213 /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3802CBF1BABBC43007E6213 /* ShowViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D3B1387E1BAD10A1008F723E /* TwitterAuthHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B1387D1BAD10A1008F723E /* TwitterAuthHelper.m */; settings = {ASSET_TAGS = (); }; };
+		D3B138851BAD11FC008F723E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CAD9BF1BAB561100839CC8 /* Realm.framework */; };
+		D3B1388B1BAD134E008F723E /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B1388A1BAD134E008F723E /* FriendsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D3CAD9BB1BAB516B00839CC8 /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD9BA1BAB516B00839CC8 /* Podcast.m */; settings = {ASSET_TAGS = (); }; };
 		D3CAD9BE1BAB519400839CC8 /* Show.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAD9BD1BAB519400839CC8 /* Show.m */; settings = {ASSET_TAGS = (); }; };
 		D3CAD9C21BAB562900839CC8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CAD9C11BAB562900839CC8 /* libc++.tbd */; };
+		D3CECF7A1BAD0AFE006F3E0F /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CECF751BAD0AFE006F3E0F /* AccountViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D3CECF7B1BAD0AFE006F3E0F /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CECF771BAD0AFE006F3E0F /* LogInViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D3CECF7C1BAD0AFE006F3E0F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CECF791BAD0AFE006F3E0F /* SignUpViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D3CECF7F1BAD0CCC006F3E0F /* FirebaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CECF7E1BAD0CCC006F3E0F /* FirebaseHelper.m */; settings = {ASSET_TAGS = (); }; };
 		D3DA94391BAB5E83006F056A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DA94381BAB5E83006F056A /* SearchViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D3DCC16F1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DCC16C1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m */; };
 		D3DCC1701BAA05BB005FC133 /* AFOAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DCC16E1BAA05BB005FC133 /* AFOAuth2Manager.m */; };
@@ -71,12 +77,24 @@
 		D3802CBC1BABA2F4007E6213 /* DefaultsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultsHelper.m; sourceTree = "<group>"; };
 		D3802CBE1BABBC43007E6213 /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
 		D3802CBF1BABBC43007E6213 /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
+		D3B1387C1BAD10A1008F723E /* TwitterAuthHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterAuthHelper.h; sourceTree = "<group>"; };
+		D3B1387D1BAD10A1008F723E /* TwitterAuthHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAuthHelper.m; sourceTree = "<group>"; };
+		D3B138891BAD134E008F723E /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		D3B1388A1BAD134E008F723E /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		D3CAD9B91BAB516B00839CC8 /* Podcast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Podcast.h; sourceTree = "<group>"; };
 		D3CAD9BA1BAB516B00839CC8 /* Podcast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Podcast.m; sourceTree = "<group>"; };
 		D3CAD9BC1BAB519400839CC8 /* Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
 		D3CAD9BD1BAB519400839CC8 /* Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Show.m; sourceTree = "<group>"; };
 		D3CAD9BF1BAB561100839CC8 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		D3CAD9C11BAB562900839CC8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D3CECF741BAD0AFE006F3E0F /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		D3CECF751BAD0AFE006F3E0F /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		D3CECF761BAD0AFE006F3E0F /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		D3CECF771BAD0AFE006F3E0F /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		D3CECF781BAD0AFE006F3E0F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		D3CECF791BAD0AFE006F3E0F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		D3CECF7D1BAD0CCC006F3E0F /* FirebaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirebaseHelper.h; sourceTree = "<group>"; };
+		D3CECF7E1BAD0CCC006F3E0F /* FirebaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirebaseHelper.m; sourceTree = "<group>"; };
 		D3DA94371BAB5E83006F056A /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		D3DA94381BAB5E83006F056A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		D3DCC16B1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestSerializer+OAuth2.h"; sourceTree = "<group>"; };
@@ -92,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3802CBA1BAB9399007E6213 /* Realm.framework in Frameworks */,
+				D3B138851BAD11FC008F723E /* Realm.framework in Frameworks */,
 				D3CAD9C21BAB562900839CC8 /* libc++.tbd in Frameworks */,
 				BB003FDB39689E07A7A8252F /* libPods.a in Frameworks */,
 				F6D502808AEF1457C04118A7 /* libPods-AudioHack iOS Elements.a in Frameworks */,
@@ -203,12 +221,20 @@
 				D323B1AD1BA8C21200AEEA5D /* HomeViewController.m */,
 				D323B1B31BA8C3D800AEEA5D /* PodcastsViewController.h */,
 				D323B1B41BA8C3D800AEEA5D /* PodcastsViewController.m */,
+				D3B138891BAD134E008F723E /* FriendsViewController.h */,
+				D3B1388A1BAD134E008F723E /* FriendsViewController.m */,
 				D323B1B61BA8C6AE00AEEA5D /* ShowsViewController.h */,
 				D323B1B71BA8C6AE00AEEA5D /* ShowsViewController.m */,
 				D3DA94371BAB5E83006F056A /* SearchViewController.h */,
 				D3DA94381BAB5E83006F056A /* SearchViewController.m */,
 				D3802CBE1BABBC43007E6213 /* ShowViewController.h */,
 				D3802CBF1BABBC43007E6213 /* ShowViewController.m */,
+				D3CECF741BAD0AFE006F3E0F /* AccountViewController.h */,
+				D3CECF751BAD0AFE006F3E0F /* AccountViewController.m */,
+				D3CECF761BAD0AFE006F3E0F /* LogInViewController.h */,
+				D3CECF771BAD0AFE006F3E0F /* LogInViewController.m */,
+				D3CECF781BAD0AFE006F3E0F /* SignUpViewController.h */,
+				D3CECF791BAD0AFE006F3E0F /* SignUpViewController.m */,
 			);
 			name = VCs;
 			sourceTree = "<group>";
@@ -247,6 +273,10 @@
 		D3802CB91BAB9114007E6213 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D3B1387C1BAD10A1008F723E /* TwitterAuthHelper.h */,
+				D3B1387D1BAD10A1008F723E /* TwitterAuthHelper.m */,
+				D3CECF7D1BAD0CCC006F3E0F /* FirebaseHelper.h */,
+				D3CECF7E1BAD0CCC006F3E0F /* FirebaseHelper.m */,
 				D3802CB31BAB9075007E6213 /* PodcastManager.h */,
 				D3802CB41BAB9075007E6213 /* PodcastManager.m */,
 				D3802CBB1BABA2F4007E6213 /* DefaultsHelper.h */,
@@ -412,7 +442,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioHack iOS Elements/Pods-AudioHack iOS Elements-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -424,16 +454,22 @@
 			files = (
 				D3CAD9BE1BAB519400839CC8 /* Show.m in Sources */,
 				D323B1891BA8C09400AEEA5D /* AppDelegate.m in Sources */,
+				D3B1388B1BAD134E008F723E /* FriendsViewController.m in Sources */,
+				D3CECF7B1BAD0AFE006F3E0F /* LogInViewController.m in Sources */,
+				D3CECF7A1BAD0AFE006F3E0F /* AccountViewController.m in Sources */,
 				D323B1861BA8C09400AEEA5D /* main.m in Sources */,
 				D3CAD9BB1BAB516B00839CC8 /* Podcast.m in Sources */,
+				D3CECF7C1BAD0AFE006F3E0F /* SignUpViewController.m in Sources */,
 				D323B1B51BA8C3D800AEEA5D /* PodcastsViewController.m in Sources */,
 				D323B1B81BA8C6AE00AEEA5D /* ShowsViewController.m in Sources */,
 				D3DCC16F1BAA05BB005FC133 /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
 				D3802CB51BAB9075007E6213 /* PodcastManager.m in Sources */,
 				D3DA94391BAB5E83006F056A /* SearchViewController.m in Sources */,
 				D3DCC1701BAA05BB005FC133 /* AFOAuth2Manager.m in Sources */,
+				D3B1387E1BAD10A1008F723E /* TwitterAuthHelper.m in Sources */,
 				D323B1AE1BA8C21200AEEA5D /* HomeViewController.m in Sources */,
 				D3802CC01BABBC43007E6213 /* ShowViewController.m in Sources */,
+				D3CECF7F1BAD0CCC006F3E0F /* FirebaseHelper.m in Sources */,
 				D3802CBD1BABA2F4007E6213 /* DefaultsHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,6 +614,12 @@
 					"$(PROJECT_DIR)/AudioHack",
 					iOS,
 					Elements,
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
 				);
 				INFOPLIST_FILE = "AudioHack iOS Elements/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -592,6 +634,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
+					"$(PROJECT_DIR)/AudioHack",
+					iOS,
+					Elements,
 					"$(PROJECT_DIR)/AudioHack",
 					iOS,
 					Elements,
